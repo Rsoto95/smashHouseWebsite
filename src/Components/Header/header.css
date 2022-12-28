@@ -1,0 +1,175 @@
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  height: 20rem;
+}
+
+.topNav {
+  display: flex;
+  flex-direction: row;
+  background-color: #181a18;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+}
+.topIcon {
+  width: 4rem;
+  padding: 1rem 1rem;
+}
+
+.loginText {
+  margin-top: 1.3rem;
+  padding-right: 2rem;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+}
+
+.login-container:hover {
+  cursor: pointer;
+}
+
+.topNavigation {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 10rem;
+}
+
+.navigation {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationContainer {
+  display: flex;
+  gap: 10rem;
+}
+
+.navigationText {
+  transition-duration: 0.4s;
+  z-index: 1;
+  padding: 2rem 4rem;
+  color: white;
+  text-decoration: none;
+  font-size: 2.2rem;
+}
+
+.navigationText:hover {
+  background-color: RGBA(0, 0, 0, 0.69);
+}
+
+.wallPaper {
+  position: absolute;
+  height: 45rem;
+  width: 100%;
+  max-width: 2400px;
+  z-index: 1;
+  filter: brightness(0.4);
+  z-index: -1;
+  border-bottom: solid;
+  object-fit: cover;
+}
+
+.legacyLogo {
+  display: flex;
+  max-width: 30rem;
+  max-height: 30rem;
+  min-height: 20rem;
+  z-index: 0;
+  margin-top: 10rem;
+}
+
+section {
+  color: whitesmoke;
+}
+
+.hamburger,
+#hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+  }
+
+
+  .hamburger {
+    display: none;
+  }
+  .hamburger-visible .navigationContainer {
+    display: flex;
+    position: absolute;
+    gap: 0;
+    flex-direction: column;
+    margin-right: 10rem;
+    top: 8rem;
+    right: -5rem;
+    width: 15rem;
+    font-size: 1.2rem;
+  }
+
+  .hamburger-visible .navigationContainer .navigationText {
+    border: solid;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .hamburger-visible .navigationContainer .navigationText:hover {
+    border: solid;
+    background-color: RGBA(0, 0, 0, 0.69);
+  }
+
+  .hamburger-container {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15rem;
+  }
+
+  .navigation {
+    color: whitesmoke;
+    justify-content: center;
+    display: none;
+  }
+ 
+
+  .wallPaper {
+    position: absolute;
+    height: 80vw;
+    z-index: 1;
+    filter: brightness(0.4);
+    z-index: -1;
+    border-bottom: solid;
+    object-fit: cover;
+  }
+
+  .legacyLogo {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  #hamburger {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 5rem;
+    height: 5rem;
+    transform: scale(-1);
+  }
+}

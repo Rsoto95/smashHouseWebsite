@@ -1,0 +1,168 @@
+.about-us {
+  background-color: #181a18;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  height: auto;
+  gap: 3rem;
+  margin-bottom: 10rem;
+}
+
+.quienes-somos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.gaming-house {
+  display: flex;
+  overflow: scroll;
+  flex-direction: row;
+  max-height: 80rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gaming-house::-webkit-scrollbar {
+  display: none;
+}
+
+.buttonNext {
+  background-color: black;
+  height: 20rem;
+  z-index: 2;
+  display: flex;
+  justify-content: right;
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(-1);
+}
+
+.buttonNext img {
+  background-color: white;
+  width: 6rem;
+  height: 6rem;
+  z-index: 9;
+}
+
+.buttonBack {
+  background-color: black;
+  height: 20rem;
+  z-index: 2;
+  display: flex;
+  justify-content: right;
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonBack img {
+  background-color: white;
+  width: 6rem;
+  height: 6rem;
+  z-index: 9;
+}
+
+.arrowButton:hover {
+  opacity: 0.3;
+}
+
+.imgContainer div img {
+  width: 100rem;
+  max-height: 40rem;
+  display: flex;
+  flex-direction: row;
+  object-fit: cover;
+}
+
+.imgContainer div {
+  display: flex;
+  flex-direction: row;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  overflow: scroll;
+  gap: 10rem;
+  justify-content: start;
+  max-width: 90rem;
+}
+
+.imgContainer::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-us {
+    background-color: #181a18;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    height: auto;
+    gap: 3rem;
+  }
+
+  .quienes-somos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    
+  }
+
+  .buttonBack {
+    display: none;
+  }
+
+  .buttonNext {
+    display: none;
+  }
+
+  .imgContainer div img {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    height: 30rem;
+  }
+
+  .imgContainer {
+    width: 100%;
+    margin-left: 0.5rem;
+    gap: 1rem;
+    
+  }
+
+  .imgContainer div {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+}

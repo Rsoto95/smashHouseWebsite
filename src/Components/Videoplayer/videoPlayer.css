@@ -1,0 +1,162 @@
+.video{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
+.videoList{
+    color: black;
+    flex-direction: column;
+    display: flex;
+    height: 26rem;
+    overflow-y: scroll;
+}
+
+
+.videoList::-webkit-scrollbar{
+    display:none;
+}
+
+.videos{
+    font-size: 1.3rem;
+    background-color: whitesmoke;
+    border: solid;
+    width: 19rem;
+    flex: 0 0 5rem;
+    flex-direction: row;
+}
+.videos h4{
+    display: none;
+}
+
+.videoComponent{
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSocial1{
+    border: solid;
+    height: 7rem;
+}
+
+.videoSocial2{
+    border: solid;
+    height: 7rem;
+    padding-left: 0.7rem;
+}
+
+.videoSocial{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.twitchLogo{
+    width: 17rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    
+}
+
+.youtubeLogo{
+    width: 17rem;
+    height: 6rem;
+}
+
+.playlistLogo{
+    display: none;
+}
+
+.videoImage{
+    width: 100%;
+    border: solid;
+    border-radius: 1rem;
+    border-color: whitesmoke;
+    cursor: pointer;
+}
+
+.videoImage:hover{
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 800px){
+
+  
+
+    .video{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-visible{
+        margin-top: 0vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .youtubeVideoPlayer{
+        width: 100%;
+        height: 30rem;
+    }
+
+
+    .videoSocial1{
+        border: solid;
+        height: 7rem;
+        display: none;
+        justify-content: center;
+    }
+    
+    .videoSocial2{
+        border: solid;
+        height: 7rem;
+        padding-left: 0.7rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .videoSocial2 a{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .videoSocial{
+        background-color: whitesmoke;
+        color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videos{
+        display: flex;
+        flex-basis: 69vw;
+        height: 100%;    
+        background-color: whitesmoke;    
+        flex-direction: column;
+    }
+
+    .videos h4{
+        font-weight: 400;
+        text-align: center;
+        display: flex;
+    }
+
+    .videoImage{
+        display: flex;
+        height: 10rem;
+        border: solid;
+        height: 20rem;
+    }
+
+    .videoList{
+        display: flex;
+        flex-direction: row;        
+        
+    }
+
+    .playlistLogo{
+        display: flex;
+        width: 10rem;
+    }
+}
